@@ -2,18 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>IT Quiz</title>
+  <title>IT 3203 Quiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="quiz-container">
-    <h1>IT 3203 Quiz</h1>
-    <div id="question-container">
-      <p id="question"></p>
-      <div id="answers"></div>
-    </div>
-    <button id="next-btn">Next</button>
-    <p id="score" style="display:none;"></p>
+    <h1>Self-Assessment Quiz</h1>
+    <form id="quiz-form">
+      <div class="question-block">
+        <p>1. What does HTML stand for?</p>
+        <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label><br>
+        <label><input type="radio" name="q1" value="b"> HighText Machine Language</label><br>
+        <label><input type="radio" name="q1" value="c"> Hyperlinks and Text Markup Language</label>
+      </div>
+
+      <div class="question-block">
+        <p>2. Which tag is used to link a CSS file?</p>
+        <label><input type="radio" name="q2" value="a"> &lt;css&gt;</label><br>
+        <label><input type="radio" name="q2" value="b"> &lt;style&gt;</label><br>
+        <label><input type="radio" name="q2" value="c"> &lt;link&gt;</label>
+      </div>
+
+      <div class="question-block">
+        <p>3. HTML is a ______ language.</p>
+        <input type="text" name="q3" placeholder="Fill in the blank">
+      </div>
+
+      <div class="question-block">
+        <p>4. Select all semantic HTML tags:</p>
+        <label><input type="checkbox" name="q4" value="header"> &lt;header&gt;</label><br>
+        <label><input type="checkbox" name="q4" value="footer"> &lt;footer&gt;</label><br>
+        <label><input type="checkbox" name="q4" value="div"> &lt;div&gt;</label><br>
+        <label><input type="checkbox" name="q4" value="section"> &lt;section&gt;</label>
+      </div>
+
+      <div class="question-block">
+        <p>5. Who is the inventor of the World Wide Web?</p>
+        <label><input type="radio" name="q5" value="a"> Elon Musk</label><br>
+        <label><input type="radio" name="q5" value="b"> Tim Berners-Lee</label><br>
+        <label><input type="radio" name="q5" value="c"> Steve Jobs</label>
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="button" id="restart-btn">Restart</button>
+    </form>
+
+    <div id="result" style="display:none;"></div>
   </div>
   <script src="script.js"></script>
 </body>
